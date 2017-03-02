@@ -1,0 +1,195 @@
+{% load staticfiles %}
+{% load compress %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>NetCS</title>
+
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/icon.css' %}">
+    {% endcompress %}
+
+     <!--CDN CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="shortcut icon" href="favicon.ico?">
+
+     <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+     <!--WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+             <!--Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">NetCS</a>
+            </div>
+
+             <!--Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#what">EVENTS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#how">MEMBERS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#who">RESEARCH</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">PROJECTS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">PUBLICATIONS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">FACILITIES</a>
+                    </li>
+                </ul>
+            </div>
+             <!--/.navbar-collapse -->
+        </div>
+         <!--/.container-fluid -->
+    </nav>
+
+    <header style="background-image: url({% static 'img/header.jpeg' %});">
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>Networked Computing System Labs</h1>
+                <p>
+                  We are focusing on <b>Dynamic & Resource-aware Composition of Media-centric Services</b> employing Programmable/Virtualized Resources
+                </p>
+            </div>
+        </div>
+        <div id="particles-js" class="">
+        </div>
+    </header>
+
+    <section id="what">
+      <div class="container">
+          <div class="col-lg-12 heading">
+            <h2>Research Area</h2>
+          </div>
+          <div class="col-lg-8 col-lg-offset-2 heading-content">
+            <h3 class="heading-title">Cloud Computing, Big data and IoT</h3>
+            <p>You can find more detailed explanation about our research theme from KRNET 2013 presentation slides.</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="box-icon">
+                <div class="icon icon icon-basic-server-cloud" class="icon"></div>
+              </div>
+              <div class="box">
+                <span>Cloud Computing</span>
+                <p>
+                  Lifecycle Service Orchestration
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="box-icon">
+                <div class="icon icon-basic-server2" class="icon"></div>
+              </div>
+              <div class="box">
+                <span>Big Data</span>
+                <p>
+                  SmartX Intelligence Cluster Effort
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="box-icon">
+                <div class="icon icon-basic-mixer2" class="icon"></div>
+              </div>
+              <div class="box">
+                <span>IoT</span>
+                <p>
+                  Smart Energy IoT-Cloud Service with Visibility Support
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="margin-bottom:100px;">
+            <div class="col-lg-6">
+              <img src="{% static 'img/research_area.png' %}" alt="SmartX" class="img-responsive">
+            </div>
+            <div class="col-lg-6">
+              <h3 class="heading-title">SmartX Automation</h3>
+              <br>
+              <p>Research Areas (See also Research, Projects, and Publications). You can also find more recent materials from ICOIN 2015 here.</p>
+              <br>
+              <p>Research Areas (See also Research, Projects, and Publications). You can also find more recent materials from ICOIN 2015 here.</p>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section id="how" class="backshape">
+      <div class="container-fluid wrapper">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 text-center">
+            <h2>Leading Projects</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="img-icon-box">
+            <img src="{% static 'img/projects/kone.png' %}" class="img-responsive"/>
+            <img src="{% static 'img/projects/oftein.png' %}" class="img-responsive"/>
+            <img src="{% static 'img/projects/onk.png' %}" class="img-responsive"/>
+            <img src="{% static 'img/projects/scent.png' %}" class="img-responsive"/>
+            <img src="{% static 'img/projects/smartfire.png' %}" class="img-responsive"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="" id="who">
+        <div class="container-fluid">
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="col-lg-12 text-center">
+            <h3>NetCS</h3>
+            <p>GIST, Gwangju, Repulic of Korea</p>
+            <p>C-206|C-207|C-208|C-210|C-212, School of Information and Communications</p>
+            <br/>
+            <p>+82-62-715-2219</p>
+            <p>jongwon@gist.ac.kr</p>
+            <div class="col-lg-12 text-center">
+        </div>
+    </section>
+  {% compress js %}
+  <script src="{% static 'js/script.js' %}"></script>
+  <script src="{% static 'js/particles.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+  {% endcompress %}
+
+</body>
+
+</html>

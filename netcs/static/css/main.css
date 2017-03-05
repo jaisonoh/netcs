@@ -10881,42 +10881,40 @@ aside {
     background-color: transparent
 }
 
-@media(min-width:768px) {
-    .navbar-default {
-        border-color: transparent;
-        background-color: transparent
-    }
-    .navbar-default .navbar-header .navbar-brand img,
-    .navbar-default .navbar-header .navbar-brand img:focus,
-    .navbar-default .navbar-header .navbar-brand img:hover {
-        display: none
-    }
-    .navbar-default .nav>li>a,
-    .navbar-default .nav>li>a:focus {
-        color: #fff
-    }
-    .navbar-default .nav>li>a:focus:hover,
-    .navbar-default .nav>li>a:hover {
-        color: #fff
-    }
-    .navbar-default.affix {
-        border-color: rgba(34, 34, 34, .05);
-        background: linear-gradient(141deg, #394673 0%, #1F2235 75%);
-        opacity: 0.9;
-    }
-    .navbar-default.affix .navbar-header .navbar-brand img,
-    .navbar-default.affix .navbar-header .navbar-brand:focus,
-    .navbar-default.affix .navbar-header .navbar-brand:hover {
-        display: block
-    }
-    .navbar-default.affix .nav>li>a,
-    .navbar-default.affix .nav>li>a:focus {
-        color: #fff
-    }
-    .navbar-default.affix .nav>li>a:focus:hover,
-    .navbar-default.affix .nav>li>a:hover {
-        color: #fff
-    }
+.navbar-default {
+    border-color: transparent;
+    background-color: transparent
+}
+.navbar-default .navbar-header .navbar-brand img,
+.navbar-default .navbar-header .navbar-brand img:focus,
+.navbar-default .navbar-header .navbar-brand img:hover {
+    display: none
+}
+.navbar-default .nav>li>a,
+.navbar-default .nav>li>a:focus {
+    color: #fff
+}
+.navbar-default .nav>li>a:focus:hover,
+.navbar-default .nav>li>a:hover {
+    color: #fff
+}
+.navbar-default.affix {
+    border-color: rgba(34, 34, 34, .05);
+    background: linear-gradient(141deg, #394673 0%, #1F2235 75%);
+    opacity: 0.9;
+}
+.navbar-default.affix .navbar-header .navbar-brand img,
+.navbar-default.affix .navbar-header .navbar-brand:focus,
+.navbar-default.affix .navbar-header .navbar-brand:hover {
+    display: block
+}
+.navbar-default.affix .nav>li>a,
+.navbar-default.affix .nav>li>a:focus {
+    color: #fff
+}
+.navbar-default.affix .nav>li>a:focus:hover,
+.navbar-default.affix .nav>li>a:hover {
+    color: #fff
 }
 
 header .header-content .header-content-inner h1 {
@@ -11068,14 +11066,18 @@ section .wrapper h2 {
   background: linear-gradient(180deg, #374172 0%, #2F396A 75%);
 }
 
-.qoute::before {
+.qoute {
+  margin-top: -5px;
+}
+
+/*.qoute::before {
   display: block;
   content: "\201C";
   font-size: 60px;
   position: absolute;
   left: -20px;
   top: -25px;
-  color: #050099;
+  color: #555;
   font-weight: bolder;
 }
 
@@ -11087,10 +11089,14 @@ section .wrapper h2 {
   right: 0;
   bottom: -45px;
   right: -20px;
-  color: #050099;
+  color: #555;
   font-weight: bolder;
-}
+}*/
 
+.name {
+  font-style: italic;
+  color: #050099;
+}
 
 .img-bg-bottom {
     margin-top: 40px

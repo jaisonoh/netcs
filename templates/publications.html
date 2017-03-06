@@ -1,0 +1,154 @@
+{% load staticfiles %}
+{% load compress %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>NetCS</title>
+
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/icon.css' %}">
+    {% endcompress %}
+
+     <!--CDN CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="shortcut icon" href="favicon.ico?">
+
+     <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+     <!--WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style media="screen">
+
+
+    </style>
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-visible navbar-fixed-top">
+        <div class="container-fluid">
+             <!--Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="{% url 'index' %}">NetCS</a>
+            </div>
+
+             <!--Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="{% url 'events' %}">EVENTS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'members' %}">MEMBERS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'research' %}">RESEARCH</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'projects' %}">PROJECTS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'publications' %}">PUBLICATIONS</a>
+                    </li>
+                    <!-- <li>
+                        <a class="page-scroll" href="#contact">FACILITIES</a>
+                    </li> -->
+                </ul>
+            </div>
+             <!--/.navbar-collapse -->
+        </div>
+         <!--/.container-fluid -->
+    </nav>
+
+    <section>
+      <div class="container">
+        <div class="col-lg-12 heading">
+          <h2>Journal Papers</h2>
+        </div>
+        <div class="col-lg-12">
+          <div class="list">
+            <div>
+              <p class="text-line"><span>International</span></p>
+            </div>
+            <ul>
+              <li><span>[IJ-70] Byung-Rae Cha and JongWon Kim, “Concept and prototype design of NFC-based micro-payment ecosystem,” IJJSC (International Journal of Space-Based and Situated Computing, vol. 4, no. 3-4, pp. 127-142, Nov. 2014.[non-SCI]</span></li>
+              <li><span>[IJ-69] Jinyong Jo, Soyeon Lee, and JongWon Kim, “Software-defined home networking devices for multi-home visual sharing,” IEEE Transactions on Consumer Electronics, vol. 60, no. 3, pp. 534–539, Aug. 2014. [SCI, non-CA]</span></li>
+              <li><span>[IJ-68] Byung-Rae Cha, YooKang Ji, and JongWon Kim, “Integration of Hadoop cluster prototype and analysis software for SMB,” Advanced Science and Technology Letters, vol. 58 (Cloud and Super Computing 2014), pp.1-5, Aug. 2014. (Published on-line DOI: 10.14257/astl.2014.58.01) [non-CA]</span></li>
+              <li><span>[IJ-67] Sangwoo Han, Namgon Kim, and JongWon Kim, “An experimental service composition tool for media-centric networked applications,” Computer Networks, vol. 63, no. 22, pp. 188–204, April 2014. (Jan. 2014, Published on-line DOI: 10.1016/j.bjp.2013.12.025). [SCI-E]</span></li>
+              <li><span>[IJ-66] Sang Woo Han and JongWon Kim, “A service composition oriented framework for configuring SMeet multiparty collaboration environments,” Journal of Multimedia Tools and Applications, vol. 68, no. 3, pp. 595-622, March 2014. (March 2012, Published on-line DOI: 10.1007/s11042-012-1066-4) [SCI-E]</span></li>
+              <li><span>[IJ-65] Hayoung Yoon, JongWon Kim, and Robert Hsieh, “Peer-assisted video on-demand streaming system in practical WiFi -based mobile opportunistic networks,” Journal of Network and Computer Applications, vol. 37, pp. 33-44, Jan. 2014. (July 2011, Published on-line DOI: 10.1016/j.jnca.2011.07.014). [SCI-E]</span></li>
+              <li><span>[IJ-64] JongRyool Kim, KyeongTae Kim, Soo-Hyung Lee, and JongWon Kim, “Resource-aware reliable networking for CPS environment and performance evaluation,” Information: An International Interdisciplinary Journal, vol. 16, no. 12(A), pp. 8529-8534, Dec. 2013. [SCI-E]</span></li>
+              <li><span>[IJ-63] Yoo-Kang Ji, Yong-Il Kim, JongWon Kim, and Byung-Rae Cha, “Multistage anomaly detection over intelligence threats for secured cloud computing resources,” Information: An International Interdisciplinary Journal, vol. 16, no. 12(A), pp. 8469-8474, Dec. 2013. [SCI-E, non-CA]</span></li>
+              <li><span>[IJ-62] Jinyong Jo, Soyeon Lee, and JongWon Kim, “Programmable IP service gateway for software-defined networking: Assisting easy composition of service overlays,” IEICE Trans. on Communications, vol. E96-B, no. 7, Jul. 2013.[SCI-Expanded]</span></li>
+              <li><span>[IJ-61] ByungRae Cha and JongWon Kim, “Handling and analysis of fake multimedia contents threats with collective intelligence in P2P file sharing environments,” Int. J. Grid and Utility Computing, vol. 4, no. 1, pp. 1-9, June 2013.</span></li>
+              <li><span>[IJ-60] Ju-Won Park and JongWon Kim, “QoS-driven multicast routing in sparse-splitting optical networks,” Photonic Network Communications, vol. 25, no. 3, pp. 178-188, May 2013. [SCI-Expanded]</span></li>
+              <li><span>[IJ-59] ByungRae Cha, YoungIl Kim, and JongWon Kim, “Design of new P2P -enabled mobile-OTP system using fingerprint features,” Journal of Telecommunications Systems – Springer Science , vol. 52, no. 4, pp. 2221-2236, Apr. 2013. [SCI-Expanded]</span></li>
+            </ul>
+            <div>
+              <p class="text-line"><span>Domestic</span></p>
+            </div>
+            <ul>
+              <li><span>[KC-169] JunSik Shin and JongWon Kim, “Functionality verification of automated remote installation of converged resource boxes for distributed cloud,”,” in Proc. 27th Korean Signal Processing Conference (KSPC), Seoul, Korea, Sep. 2014.</span></li>
+              <li><span>[KC-168] Jungsu Han and JongWon Kim, “DPDK-accelerated networking performance measurement and comparison of software-based virtual switch,” in Proc. 27th Korean Signal Processing Conference (KSPC), Seoul, Korea, Sep. 2014.</span></li>
+              <li><span>[KC-167] Taejin Ha, Chiwook Jeong, Jargalsaikhan Nrantuya, Namwon An, Hyuk Lim, and JongWon Kim, “sFlow based network attack detection system,” in Proc. KICS (Korea Institute of Communications Society) Summer Conference, Aug. 2014.</span></li>
+              <li><span>[KC-166] TaeHeum Na and JongWon Kim, “Promoting P2P direct connection via scheduler improvement of MOVi+,” in Proc. KIISE Korean Computer Conference (KCC 2013), Yeosu, Korea, July 2013.</span></li>
+              <li><span>[KC-165] Namgon Lucas Kim and JongWon Kim, “Applying virtualization to SmartX node for efficient resource utilization,” in Proc. KIISE Korean Computer Conference (KCC 2013), Yeosu, Korea, July 2013.</span></li>
+              <li><span>[KC-164] Jae-Yong Yoo, Namgon Kim, and JongWon Kim, “An early thought on flow-based computing and networking coordination for visual-sharing services,” in Proc. Summer Workshop on Computer Communications (SWCC 2012), Jeju, Korea, Aug. 2012.</span></li>
+              <li><span>[KC-163] Seokhee Jung, JongRyool Kim, Hyun Lee, and JongWon Kim, “Realization of cloud media testing environment for media distribution experiments employing mobile devices,” in Proc. Summer Workshop on Computer Communications (SWCC 2012), Jeju, Korea, Aug. 2012.</span></li>
+              <li><span>[KC-162] Gyeong-Soo Noh, JongRyool Kim, and JongWon Kim, “Energy-efficient video sharing from smart device over cloud media environment,” in Proc. Summer Workshop on Computer Communications (SWCC 2012), Jeju, Korea, Aug. 2012.</span></li>
+              <li><span>[KC-161] Gyeong-Soo Noh, JongRyool Kim, and JongWon Kim, “Implementation of prioritized video transport on android mobile smart devices,” in Proc. 22nd Joint Conference on Communications and Information (JCCI), PyeongChang, Korea, Apr. 2012.</span></li>
+              <li><span>[KC-160] Hyun Lee, Jae-Yong Yoo, and JongWon Kim, “Performance improvement of segment based mobile P2P VoD with caching-enabled switches,” in Proc. 22nd Joint Conference on</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="col-lg-12 text-center">
+              <h3>NetCS</h3>
+              <p>GIST, Gwangju, Repulic of Korea</p>
+              <p>C-206|C-207|C-208|C-210|C-212, School of Information and Communications</p>
+              <br/>
+              <p>+82-62-715-2219</p>
+              <p>jongwon@gist.ac.kr</p>
+              <br/>
+              <div>
+                <span>&copy;</span>
+                <span id="copyright">
+                    <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                </span>
+                <span>NetCS</span>
+              </div>
+            </div>
+        </div>
+    </section>
+  {% compress js %}
+  <script src="{% static 'js/script.js' %}"></script>
+  {% endcompress %}
+
+</body>
+
+</html>

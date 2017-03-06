@@ -1,0 +1,248 @@
+{% load staticfiles %}
+{% load compress %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>NetCS</title>
+
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/icon.css' %}">
+    {% endcompress %}
+
+     <!--CDN CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="shortcut icon" href="favicon.ico?">
+
+     <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+     <!--WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style media="screen">
+
+
+    </style>
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-visible navbar-fixed-top">
+        <div class="container-fluid">
+             <!--Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="{% url 'index' %}">NetCS</a>
+            </div>
+
+             <!--Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="{% url 'events' %}">EVENTS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'members' %}">MEMBERS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'research' %}">RESEARCH</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'projects' %}">PROJECTS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'publications' %}">PUBLICATIONS</a>
+                    </li>
+                    <!-- <li>
+                        <a class="page-scroll" href="#contact">FACILITIES</a>
+                    </li> -->
+                </ul>
+            </div>
+             <!--/.navbar-collapse -->
+        </div>
+         <!--/.container-fluid -->
+    </nav>
+
+    <section>
+      <div class="container">
+
+        <div class="col-lg-12 heading">
+          <h2>Professor</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1 mar-btm">
+            <div class="col-lg-4">
+              <img src="{% static 'img/members/professor.png' %}" alt="SmartX" class="shadow img-responsive">
+            </div>
+            <div class="col-lg-8">
+              <p class="prof-name">Prof. Jongwon Kim</p>
+              <br>
+              <p class="member-work">WORK EXPERIENCE</p>
+              <p>2008 - present GIST, Professor</p>
+              <p>2001 - 2008 GIST, Associate Professor</p>
+              <p>1997 - 2001 University of Southern California, Research Assistant Professor</p>
+              <p>2000 - 2001 Intervideo Inc., Technology consultant</p>
+              <p>1999 - 2000 VProtect Systems Inc., Technology Consultant</p>
+              <p>1994 - 1999 KongJu National University, Assistant Professor</p>
+              <p>1987 - 1994 Seoul National University, Research Assistant</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-12 heading">
+          <h2>Research Professor</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1">
+            <div class="col-lg-6 text-center mar-btm">
+              <div class="center-cropped" style="background-image: url('http://placehold.it/231x281');"></div>
+              <p class="member-name">Dr. ByungRae Cha</p>
+            </div>
+            <div class="col-lg-6 text-center mar-btm">
+              <div class="center-cropped" style="background-image: url('http://placehold.it/231x281');"></div>
+              <p class="member-name">Dr. Sun Park</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-12 heading">
+          <h2>Ph. D. Course</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="col-lg-4 text-center mar-btm">
+              <div class="center-cropped" style="background-image: url('http://placehold.it/231x281');"></div>
+              <p class="member-name">Namgon Lucas Kim</p>
+            </div>
+            <div class="col-lg-4 text-center mar-btm">
+              <div class="center-cropped" style="background-image: url('http://placehold.it/231x281');"></div>
+              <p class="member-name">Aris Cahyadi Risdianto</p>
+            </div>
+            <div class="col-lg-4 text-center mar-btm">
+              <div class="center-cropped" style="background-image: url('http://placehold.it/231x281');"></div>
+              <p class="member-name">Jungsu Han</p>
+            </div>
+            <div class="col-lg-4 text-center mar-btm">
+              <div class="center-cropped" style="background-image: url('http://placehold.it/231x281');"></div>
+              <p class="member-name">Junsik Shin</p>
+            </div>
+            <div class="col-lg-4 text-center mar-btm">
+              <div class="center-cropped" style="background-image: url('http://placehold.it/231x281');"></div>
+              <p class="member-name">Seungryong Kim</p>
+            </div>
+            <div class="col-lg-4 text-center mar-btm">
+              <div class="center-cropped" style="background-image: url('http://placehold.it/231x281');"></div>
+              <p class="member-name">Usman Muhammad</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-12 heading">
+          <h2>M.S. Course	</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="col-lg-4 text-center mar-btm">
+              <div class="center-cropped" style="background-image: url({% static 'img/members/sjw.png' %});"></div>
+              <p class="member-name">Jiwon Song</p>
+            </div>
+            <div class="col-lg-4 text-center mar-btm">
+              <div class="center-cropped" style="background-image: url({% static 'img/members/ljk.png' %});"></div>
+              <p class="member-name">Jungi Lee</p>
+            </div>
+            <div class="col-lg-4 text-center mar-btm">
+              <div class="center-cropped" style="background-image: url({% static 'img/members/yhb.png' %});"></div>
+              <p class="member-name">Heebum Yoon</p>
+            </div>
+            <div class="col-lg-4 text-center mar-btm">
+              <div class="center-cropped" style="background-image: url({% static 'img/members/nth.png' %});"></div>
+              <p class="member-name">Taekho Nam</p>
+            </div>
+            <div class="col-lg-4 text-center mar-btm">
+              <div class="center-cropped" style="background-image: url({% static 'img/members/kcw.png' %});"></div>
+              <p class="member-name">Chorwon Kim</p>
+            </div>
+            <div class="col-lg-4 text-center mar-btm">
+              <div class="center-cropped" style="background-image: url({% static 'img/members/kjc.png' %});"></div>
+              <p class="member-name">Jincheol Kwon</p>
+            </div>
+            <div class="col-lg-4 text-center mar-btm">
+              <div class="center-cropped" style="background-image: url({% static 'img/members/kjs.gif' %});"></div>
+              <p class="member-name">Juseong Kim</p>
+            </div>
+            <div class="col-lg-4 text-center mar-btm">
+              <div class="center-cropped" style="background-image: url({% static 'img/members/osj.png' %});"></div>
+              <p class="member-name">Sojin Oh</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-12 heading">
+          <h2>Staff</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="col-lg-4 text-center mar-btm">
+              <div class="center-cropped" style="background-image: url('http://placehold.it/231x281');"></div>
+              <p class="member-name">Youngbin Im</p>
+            </div>
+            <div class="col-lg-4 text-center mar-btm">
+              <div class="center-cropped" style="background-image: url('http://placehold.it/231x281');"></div>
+              <p class="member-name">New</p>
+            </div>
+            <div class="col-lg-4 text-center mar-btm">
+              <div class="center-cropped" style="background-image: url('http://placehold.it/231x281');"></div>
+              <p class="member-name">New</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="col-lg-12 text-center">
+              <h3>NetCS</h3>
+              <p>GIST, Gwangju, Repulic of Korea</p>
+              <p>C-206|C-207|C-208|C-210|C-212, School of Information and Communications</p>
+              <br/>
+              <p>+82-62-715-2219</p>
+              <p>jongwon@gist.ac.kr</p>
+              <br/>
+              <div>
+                <span>&copy;</span>
+                <span id="copyright">
+                    <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                </span>
+                <span>NetCS</span>
+              </div>
+            </div>
+        </div>
+    </section>
+  {% compress js %}
+  <script src="{% static 'js/script.js' %}"></script>
+  {% endcompress %}
+
+</body>
+
+</html>

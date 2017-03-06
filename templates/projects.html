@@ -1,0 +1,153 @@
+{% load staticfiles %}
+{% load compress %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>NetCS</title>
+
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/icon.css' %}">
+    {% endcompress %}
+
+     <!--CDN CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="shortcut icon" href="favicon.ico?">
+
+     <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+     <!--WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style media="screen">
+
+
+    </style>
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-visible navbar-fixed-top">
+        <div class="container-fluid">
+             <!--Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="{% url 'index' %}">NetCS</a>
+            </div>
+
+             <!--Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="{% url 'events' %}">EVENTS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'members' %}">MEMBERS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'research' %}">RESEARCH</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'projects' %}">PROJECTS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'publications' %}">PUBLICATIONS</a>
+                    </li>
+                    <!-- <li>
+                        <a class="page-scroll" href="#contact">FACILITIES</a>
+                    </li> -->
+                </ul>
+            </div>
+             <!--/.navbar-collapse -->
+        </div>
+         <!--/.container-fluid -->
+    </nav>
+
+    <section>
+      <div class="container">
+        <div class="col-lg-12 heading">
+          <h2>Projects</h2>
+        </div>
+        <div class="col-lg-12">
+          <div class="list">
+            <div>
+              <p class="text-line"><span>2015</span></p>
+            </div>
+            <ul>
+              <li><span>SafeBox: 자동설정과 장애복구 기능을 가진 소프트웨어-정의 저장 박스 – sponsored by GTI in GIST (3/15~12/15)</span></li>
+              <li><span>SDN-coordinated, 융합형 박스(Hyper-convergence in a Box)를 활용한 DevOps 기반 서비스 Lifecycle 관리 자동화 소프트웨어와 SDN 기반 IoT 게이트웨이와 플랫폼 개발 – sponsored by NIPA (5/15~3/16)</span></li>
+              <li><span>글로벌 SDN/NFV 공개소프트웨어 핵심 모듈/기능 개발 – sponsored by Ministry of Science, ICT and Planning (6/15~5/16)</span></li>
+              <li><span>IoT-SDN-Cloud 대응형 오픈 SmartX 플랫폼의 OF@KOREN Playground 적용 및 검증 – sponsored by NIA (7/15~12/15)</span></li>
+            </ul>
+            <div>
+              <p class="text-line"><span>2014</span></p>
+            </div>
+            <ul>
+              <li><span>SmartX media system for integrating and coordinating of heterogeneous parallel computing and flow-based software defined networking (phase 3/3) – sponsored by National</span></li>
+              <li><span>Research Foundation (NRF), Korea (05/14~04/15, principal investigator)</span></li>
+              <li><span>SDN-coordinated, hyper-convergence-in-a-box based DevOps service lifecycle management automation software and IoT gateway/platform development – sponsored by National IT Industry Promotion Agency(NIPA), Korea (6/14~ , investigator)</span></li>
+              <li><span>S-box: Software-Defined Virtual Playground Automation – sponsored by National IT Industry Promotion Agency(NIPA), Korea (6/14~5/15, principal investigator)</span></li>
+              <li><span>Communications and Signal Processing Methods for Future Hyperconnected Society – sponsored by Gwangju Institute of Science and Technology (GIST), Korea (1/14~12/14, investigator)</span></li>
+              <li><span>Realizing Secure SDN Infrastructure and Services for KOREN Future Improvement – sponsored by National Information Society Agency(NIA), Korea (8/14~12/14, principal investigator)</span></li>
+            </ul>
+            <div>
+              <p class="text-line"><span>2013</span></p>
+            </div>
+            <ul>
+              <li><span>Expansion and enhancement of OpenFlow -based SDN experiment infrastructure – sponsored by National Information Society Agency (NIA), Korea (7/13~12/13, principal investigator)</span></li>
+              <li><span>SmartX media system for integrating and coordinating of heterogeneous parallel computing and flow-based software defined networking (phase 2/3) – sponsored by National</span></li>
+              <li><span>Research Foundation (NRF), Korea (05/13~04/14, principal investigator)</span></li>
+              <li><span>Research on next-generation wired/wireless communication networks and services – sponsored by Gwangju Institute of Science and Technology (GIST), Korea (1/13~12/13, investigator)</span></li>
+              <li><span>GIST SCENT PLSI (Partnership & Leadership for the nationwide Supercomputing Infrastructure) Tier-1 Center Project – sponsored by Korea Institute of Science and Technology</span></li>
+              <li><span>Information (KISTI), Korea (1/13 ~ 12/13, principal investigator)</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="col-lg-12 text-center">
+              <h3>NetCS</h3>
+              <p>GIST, Gwangju, Repulic of Korea</p>
+              <p>C-206|C-207|C-208|C-210|C-212, School of Information and Communications</p>
+              <br/>
+              <p>+82-62-715-2219</p>
+              <p>jongwon@gist.ac.kr</p>
+              <br/>
+              <div>
+                <span>&copy;</span>
+                <span id="copyright">
+                    <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                </span>
+                <span>NetCS</span>
+              </div>
+            </div>
+        </div>
+    </section>
+  {% compress js %}
+  <script src="{% static 'js/script.js' %}"></script>
+  {% endcompress %}
+
+</body>
+
+</html>

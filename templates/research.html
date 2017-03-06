@@ -1,0 +1,167 @@
+{% load staticfiles %}
+{% load compress %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>NetCS</title>
+
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/icon.css' %}">
+    {% endcompress %}
+
+     <!--CDN CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="shortcut icon" href="favicon.ico?">
+
+     <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+     <!--WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style media="screen">
+
+
+    </style>
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-visible navbar-fixed-top">
+        <div class="container-fluid">
+             <!--Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="{% url 'index' %}">NetCS</a>
+            </div>
+
+             <!--Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="{% url 'events' %}">EVENTS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'members' %}">MEMBERS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'research' %}">RESEARCH</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'projects' %}">PROJECTS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'publications' %}">PUBLICATIONS</a>
+                    </li>
+                    <!-- <li>
+                        <a class="page-scroll" href="#contact">FACILITIES</a>
+                    </li> -->
+                </ul>
+            </div>
+             <!--/.navbar-collapse -->
+        </div>
+         <!--/.container-fluid -->
+    </nav>
+
+    <section>
+      <div class="container">
+        <div class="col-lg-12 heading">
+          <h2>Research Area</h2>
+        </div>
+        <div class="col-lg-12">
+          <div class="list">
+            <div>
+              <p class="text-line"><span>From Spring 2015</span></p>
+            </div>
+            <ul>
+              <li><span>Networked Computing Systems also focusing on SmartX-mini</span></li>
+              <li><span>IoT-Cloud and IoT-Cloud Testbed</span></li>
+            </ul>
+            <div>
+              <p class="text-line"><span>From Spring 2013</span></p>
+            </div>
+            <ul>
+              <li><span>Networked Computing Systems (NetCS) focusing on “Dynamic & Resource-aware Composition of Media-centric Services employing Programmable/Virtualized Computing/Networking Resources”</span></li>
+              <li><span>Software-Defined networking (SDN) and Cloud computing for Future Internet testbed</span></li>
+              <li><span>Smart media-centric services employing heterogeneous SmartX nodes</span></li>
+            </ul>
+            <div>
+              <p class="text-line"><span>From Spring 2011</span></p>
+            </div>
+            <ul>
+              <li><span>Smart Media Services (SmartMS)</span></li>
+              <li><span>NetComputing Testbed (NetCompTB)</span></li>
+            </ul>
+            <div>
+              <p class="text-line"><span>From Spring 2009</span></p>
+            </div>
+            <ul>
+              <li><span>Cross-layer network-adaptive one-to-one (one-to-many) media transports over multi-hop wireless networks]]</span></li>
+              <li><span>Opportunistic (mobile) P2P media streaming focusing on spatial-temporal efficiency for ad-hoc mesh networks with mobile nodes.</span></li>
+            </ul>
+            <div>
+              <p class="text-line"><span>From Fall 2001</span></p>
+            </div>
+            <ul>
+              <li><span>Multi-party advanced collaboration environment and remote visualization (Access Grid)</span></li>
+              <li><span>Interactive networked 3D virtual environments and games</span></li>
+              <li><span>Immersive media contents serving and high-speed delivery (3D HD video over Gbps)</span></li>
+              <li><span>Persistent and autonomous information sharing via P2P /overlay content networking</span></li>
+              <li><span>Flexible and transparent protocols & middleware for GRID & home networks</span></li>
+              <li><span>Integrated framework for resource scheduling for distributed systems with lambda networking</span></li>
+              <li><span>End-to-end media performance via adaptive network QoS and hybrid monitoring</span></li>
+              <li><span>Secure media access with intellectual property management and group-based security</span></li>
+              <li><span>Ad Hoc networking for ambient intelligence and pervasive environments (mesh network, IPv6)</span></li>
+              <li><span>Dynamic network-adaptive media delivery over highly fluctuating networks for graceful degradation</span></li>
+              <li><span>Ubiquitous media streaming with mobility, QoS, and multicast support</span></li>
+              <li><span>Resilient and synchronized media distribution over multicast-enabled networks</span></li>
+            </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="col-lg-12 text-center">
+              <h3>NetCS</h3>
+              <p>GIST, Gwangju, Repulic of Korea</p>
+              <p>C-206|C-207|C-208|C-210|C-212, School of Information and Communications</p>
+              <br/>
+              <p>+82-62-715-2219</p>
+              <p>jongwon@gist.ac.kr</p>
+              <br/>
+              <div>
+                <span>&copy;</span>
+                <span id="copyright">
+                    <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                </span>
+                <span>NetCS</span>
+              </div>
+            </div>
+        </div>
+    </section>
+  {% compress js %}
+  <script src="{% static 'js/script.js' %}"></script>
+  {% endcompress %}
+
+</body>
+
+</html>

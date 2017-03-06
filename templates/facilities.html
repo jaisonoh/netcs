@@ -1,0 +1,107 @@
+{% load staticfiles %}
+{% load compress %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>NetCS</title>
+
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/icon.css' %}">
+    {% endcompress %}
+
+     <!--CDN CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="shortcut icon" href="favicon.ico?">
+
+     <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+     <!--WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-visible navbar-fixed-top">
+        <div class="container-fluid">
+             <!--Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="{% url 'index' %}">NetCS</a>
+            </div>
+
+             <!--Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="{% url 'events' %}">EVENTS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'members' %}">MEMBERS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'research' %}">RESEARCH</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'projects' %}">PROJECTS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'publications' %}">PUBLICATIONS</a>
+                    </li>
+                    <!-- <li>
+                        <a class="page-scroll" href="#contact">FACILITIES</a>
+                    </li> -->
+                </ul>
+            </div>
+             <!--/.navbar-collapse -->
+        </div>
+         <!--/.container-fluid -->
+    </nav>
+
+    <section id="contact">
+        <div class="container">
+            <div class="col-lg-12 text-center">
+              <h3>NetCS</h3>
+              <p>GIST, Gwangju, Repulic of Korea</p>
+              <p>C-206|C-207|C-208|C-210|C-212, School of Information and Communications</p>
+              <br/>
+              <p>+82-62-715-2219</p>
+              <p>jongwon@gist.ac.kr</p>
+              <br/>
+              <div>
+                <span>&copy;</span>
+                <span id="copyright">
+                    <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                </span>
+                <span>NetCS</span>
+              </div>
+            </div>
+        </div>
+    </section>
+  {% compress js %}
+  <script src="{% static 'js/script.js' %}"></script>
+  <script src="{% static 'js/particles.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+  {% endcompress %}
+
+</body>
+
+</html>

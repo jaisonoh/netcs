@@ -45,30 +45,30 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">NetCS</a>
+                <a class="navbar-brand page-scroll" href="{% url 'index' %}">NetCS</a>
             </div>
 
              <!--Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#what">EVENTS</a>
+                        <a class="page-scroll" href="{% url 'events' %}">EVENTS</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#how">MEMBERS</a>
+                        <a class="page-scroll" href="{% url 'members' %}">MEMBERS</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#who">RESEARCH</a>
+                        <a class="page-scroll" href="{% url 'research' %}">RESEARCH</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">PROJECTS</a>
+                        <a class="page-scroll" href="{% url 'projects' %}">PROJECTS</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">PUBLICATIONS</a>
+                        <a class="page-scroll" href="{% url 'publications' %}">PUBLICATIONS</a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a class="page-scroll" href="#contact">FACILITIES</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
              <!--/.navbar-collapse -->
@@ -150,18 +150,16 @@
 
     <section id="how" class="backshape">
       <div class="container-fluid wrapper">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 heading">
-            <h2>Leading Projects</h2>
-          </div>
+        <div class="col-lg-12 heading">
+          <h2>Collaborative Projects</h2>
         </div>
         <div class="row">
           <div class="img-icon-box">
-            <img src="{% static 'img/projects/kone.png' %}" class="img-responsive"/>
-            <img src="{% static 'img/projects/oftein.png' %}" class="img-responsive"/>
-            <img src="{% static 'img/projects/onk.png' %}" class="img-responsive"/>
-            <img src="{% static 'img/projects/scent.png' %}" class="img-responsive"/>
-            <img src="{% static 'img/projects/smartfire.png' %}" class="img-responsive"/>
+            <img src="{% static 'img/projects/onk.png' %}" class=""/>
+            <img src="{% static 'img/projects/kone.png' %}" class=""/>
+            <img src="{% static 'img/projects/oftein.png' %}" class=""/>
+            <img src="{% static 'img/projects/smartfire.png' %}" class=""/>
+            <img src="{% static 'img/projects/scent.png' %}" class=""/>
           </div>
         </div>
       </div>
@@ -169,10 +167,8 @@
 
     <section id="who">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 heading">
-              <h2 class="no-margin">Call For Participation</h2>
-            </div>
+          <div class="col-lg-12 heading">
+            <h2 class="no-margin">Call For Participation</h2>
           </div>
           <div class="row">
             <div class="col-lg-10 col-lg-offset-1">
@@ -200,13 +196,21 @@
     <section id="contact">
         <div class="container">
             <div class="col-lg-12 text-center">
-            <h3>NetCS</h3>
-            <p>GIST, Gwangju, Repulic of Korea</p>
-            <p>C-206|C-207|C-208|C-210|C-212, School of Information and Communications</p>
-            <br/>
-            <p>+82-62-715-2219</p>
-            <p>jongwon@gist.ac.kr</p>
-            <div class="col-lg-12 text-center">
+              <h3>NetCS</h3>
+              <p>GIST, Gwangju, Repulic of Korea</p>
+              <p>C-206|C-207|C-208|C-210|C-212, School of Information and Communications</p>
+              <br/>
+              <p>+82-62-715-2219</p>
+              <p>jongwon@gist.ac.kr</p>
+              <br/>
+              <div>
+                <span>&copy;</span>
+                <span id="copyright">
+                    <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                </span>
+                <span>NetCS</span>
+              </div>
+            </div>
         </div>
     </section>
   {% compress js %}

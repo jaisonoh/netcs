@@ -26,6 +26,8 @@ Using this template to create a new Django app is easy::
 
     $ pip install django
     $ django-admin.py startproject --template=https://github.com/heroku/heroku-django-template/archive/master.zip --name=Procfile [project_name]
+    $ cd [project_name]
+    $ pip install -r requirements.txt
 
 ### 1.3. Run Local Server
 
@@ -54,6 +56,11 @@ Using this template to create a new Django app is easy::
 ### 2.2. Access to App
 
     $ heroku run bash
+    
+### 2.3. Show Status/Log
+
+    $ heroku ps
+    $ heroku logs
 
 See also, a [ready-made application](https://github.com/heroku/python-getting-started), ready to deploy.
 

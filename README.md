@@ -34,7 +34,7 @@ A start template for Django
     # exit virtualenv
     $ deactivate
     
-    # enter virtualenv
+    # enter virtualenv
     $ workon [env_name]
 
 ### 1.2. Creating Your Project

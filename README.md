@@ -28,7 +28,7 @@ A start template for Django
     # make virtualenv
     $ mkvirtualenv [env_name]
     
-    # enter virtualenv
+    # enter virtualenv
     $ workon [env_name]
     
     # exit virtualenv

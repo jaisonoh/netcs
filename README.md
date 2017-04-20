@@ -20,6 +20,23 @@ A start template for Django
     source /usr/local/bin/virtualenvwrapper.sh
     $ mkvirtualenv netcs
 
+#### Useful Commands for Virtualenvwrapper
+
+    # show vitualenv list
+    $ lsvirtualenv
+    
+    # make virtualenv
+    $ mkvirtualenv [env_name]
+    
+    # enter virtualenv
+    $ workon [env_name]
+    
+    # exit virtualenv
+    $ deactivate
+    
+    # enter virtualenv
+    $ workon [env_name]
+
 ### 1.2. Creating Your Project
 
 Using this template to create a new Django app is easy::
@@ -42,7 +59,8 @@ Using this template to create a new Django app is easy::
 
     $ heroku create [app_name]
     $ git push heroku master
-
+    
+    # If you encounter an error with DB
     $ heroku run python manage.py migrate
 
 ## Useful Heroku Commands
